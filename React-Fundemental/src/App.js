@@ -10,6 +10,7 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Form from "./components/Form";
 import StyleSheet from "./components/StyleSheet";
 import Inline from "./components/Inline";
 import './myStyles.css';
@@ -37,10 +38,11 @@ function App() {
         // <UserGreeting />
         // <NameList />
           }
-          <h1 className="danger">Error</h1>
+          {/* <h1 className="danger">Error</h1>
           <h1 className={styles.success}>Success</h1>
           <StyleSheet primary={true}/>
-          <Inline/>
+          <Inline/> */}
+          <Form />
 
     </div>
   );
