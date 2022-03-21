@@ -10,6 +10,11 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import StyleSheet from "./components/StyleSheet";
+import Inline from "./components/Inline";
+import './myStyles.css';
+import styles from './myStyles.module.css';
+
 
 function App() {
   return (
@@ -30,9 +35,12 @@ function App() {
         // <EventBind />
         // <ParentComponent />
         // <UserGreeting />
-
+        // <NameList />
           }
-          <NameList />
+          <h1 className="danger">Error</h1>
+          <h1 className={styles.success}>Success</h1>
+          <StyleSheet primary={true}/>
+          <Inline/>
 
     </div>
   );
