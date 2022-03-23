@@ -13,15 +13,14 @@ import NameList from "./components/NameList";
 import Form from "./components/Form";
 import StyleSheet from "./components/StyleSheet";
 import Inline from "./components/Inline";
-import './myStyles.css';
-import styles from './myStyles.module.css';
-
+import "./myStyles.css";
+import styles from "./myStyles.module.css";
+import LifeCycleA from "./components/LifeCycleA";
 
 function App() {
   return (
     <div className="App">
       {
-
         // <Great name="hanan" heroName="M7md"/ >
         // <Great name="hanan2" heroName="M7md2">
         //     <p> This is Children prop</p>
@@ -37,13 +36,15 @@ function App() {
         // <ParentComponent />
         // <UserGreeting />
         // <NameList />
-          }
-          {/* <h1 className="danger">Error</h1>
+      }
+      {/* <h1 className="danger">Error</h1>
           <h1 className={styles.success}>Success</h1>
           <StyleSheet primary={true}/>
-          <Inline/> */}
-          <Form />
+          <Inline/> 
+          // <Form />
 
+          */}
+      <LifeCycleA />
     </div>
   );
 }
