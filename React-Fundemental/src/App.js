@@ -18,6 +18,8 @@ import styles from "./myStyles.module.css";
 import LifeCycleA from "./components/LifeCycleA";
 import FragementDemo from "./components/FragementDemo";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
@@ -49,7 +51,9 @@ function App() {
       {/* <LifeCycleA /> */}
 
       {/* <FragementDemo /> */}
-      <Table />
+      {/* <Table /> */}
+      <ParentComp/>
+      
     </div>
   );
 }
