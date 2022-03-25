@@ -16,6 +16,8 @@ import Inline from "./components/Inline";
 import "./myStyles.css";
 import styles from "./myStyles.module.css";
 import LifeCycleA from "./components/LifeCycleA";
+import FragementDemo from "./components/FragementDemo";
+import Table from "./components/Table";
 
 function App() {
   return (
@@ -44,7 +46,10 @@ function App() {
           // <Form />
 
           */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
+
+      {/* <FragementDemo /> */}
+      <Table />
     </div>
   );
 }
