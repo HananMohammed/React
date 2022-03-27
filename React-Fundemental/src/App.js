@@ -31,6 +31,7 @@ import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
+import CounterRenderProps from "./components/CounterRenderProps";
 
 function App() {
   return (
@@ -68,7 +69,7 @@ function App() {
       {/* <FocusInput /> */}
       {/* <FRParentInput /> */}
       {/* <PrtalDemo /> */}
-        {/* <ErrorBoundary>
+      {/* <ErrorBoundary>
           <Hero heroName='superman' />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -77,11 +78,23 @@ function App() {
         <ErrorBoundary>
           <Hero heroName='joker' />
         </ErrorBoundary> */}
-        <ClickCounter name='Hanan' />
-        <HoverCounter />
-        <ClickCounterTwo />
-        <HoverCounterTwo />
-        <User render={(isLoggedIn)=>isLoggedIn ? 'Vishwas' : 'Guest'}/>
+      {/* <ClickCounter name="Hanan" />
+      <HoverCounter />
+      <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Vishwas" : "Guest")} /> */}
+
+      <CounterRenderProps>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </CounterRenderProps>
+
+      <CounterRenderProps>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </CounterRenderProps>
     </div>
   );
 }
