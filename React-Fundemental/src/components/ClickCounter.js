@@ -5,10 +5,10 @@ render() {
     const {count, incrementCount} = this.props
     return (
     <div>
-        <button onClick={ incrementCount }>  Clicked {count} Times</button>
+        <button onClick={ incrementCount }> {this.props.name} Clicked {count} Times</button>
     </div>
     )
 }
 }
 
-export default WithCounter(ClickCounter)
+export default WithCounter( ClickCounter, 5 )
