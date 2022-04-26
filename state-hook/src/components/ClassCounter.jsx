@@ -5,7 +5,7 @@ class ClassCounter extends Component {
       super(props)
     
       this.state = {
-         count: 0
+        count: 0
       }
     }
     incrementCount = () => {
