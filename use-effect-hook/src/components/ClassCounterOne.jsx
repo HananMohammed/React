@@ -5,7 +5,8 @@ export class ClassCounterOne extends Component {
         super(props)
     
         this.state = {
-            count:0
+            count: 0,
+            name:''
         }
     }
 
@@ -14,13 +15,20 @@ export class ClassCounterOne extends Component {
     }
     
     componentDidUpdate(prevProps, prevState) {
+        if (prevState.count != this.state.count) {
+        console.log('updating Doc Title');
         document.title = `Clicked ${this.state.count} Times`
-
+        }
     }
     render() {
         return (
             <div>
-                <button onClick={ () => this.setState( {count: this.state.count} ) }> click {this.state.count+1} times</button> 
+                <input
+                    type="text"
+                    value={this.state.name}
+                    onChange={e => this.setState({ name: e.target.value })}
+                />
+                <button onClick={ () => this.setState( {count: this.state.count+1} ) }> click {this.state.count+1} times</button> 
             </div>
         )
     }
